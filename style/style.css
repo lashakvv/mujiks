@@ -15,6 +15,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   line-height: 1; }
 
 ol, ul {
@@ -42,10 +45,10 @@ a {
   box-sizing: border-box; }
 
 body {
-  background-color: aqua; }
+  background-color: #78ecec; }
 
 .header {
-  background-color: aqua; }
+  background-color: #78ecec; }
 
 .nav-ul {
   float: right;
@@ -57,10 +60,131 @@ body {
   font-size: 25px;
   margin-left: 10px; }
 
+.nav-a {
+  color: blueviolet; }
+
 .mujiks {
+  display: flex;
   width: 200px;
   height: 100px;
   margin-left: 60px;
   margin-top: 5px;
   border-radius: 10px;
   border-radius: 5px; }
+
+hr {
+  border: blue 2px solid; }
+
+.box {
+  display: flex;
+  width: 30%;
+  height: 350px;
+  border: black 2px solid;
+  border-radius: 3px;
+  float: left;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between; }
+
+.box:hover {
+  background-color: blueviolet;
+  transition: linear 2s; }
+
+.text-box {
+  display: flex;
+  display: block;
+  height: auto;
+  text-align: center; }
+
+.text {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  color: black; }
+
+.text-box:hover {
+  background-color: blueviolet;
+  transition: linear 2s; }
+
+img {
+  width: 150px;
+  height: 230px; }
+
+p {
+  display: inline-block;
+  font-size: 17px;
+  color: black;
+  font-weight: bold; }
+
+.container {
+  padding: 16px; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1; }
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #f1f1f1;
+  outline: none; }
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px; }
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: #f1f1f1;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9; }
+
+.registerbtn:hover {
+  opacity: 1; }
+
+a {
+  color: dodgerblue; }
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center; }
+
+.footer {
+  float: right;
+  padding: 20px; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  background: #55ACEE;
+  color: black; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: black; }
+
+.fa-youtube {
+  background: #55ACEE;
+  color: black; }
+
+.fa-instagram {
+  background: #55ACEE;
+  color: black; }
+
+.fa-google {
+  background: #55ACEE;
+  color: black; }

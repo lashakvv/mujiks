@@ -1,66 +1,28 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "./reset.scss";
+@import "./mixins.scss";
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; }
-  
-  /* HTML5 display-role reset for older browsers */
-  
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block; }
-  
-  body {
-    line-height: 1; }
-  
-  ol, ul {
-    list-style: none; }
-  
-  blockquote, q {
-    quotes: none; }
-  
-  blockquote {
-    &:before, &:after {
-      content: '';
-      content: none; } }
-  
-  q {
-    &:before, &:after {
-      content: '';
-      content: none; } }
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-  a{
-      text-decoration: none;
-  }
-  *{
-      box-sizing: border-box;
-  }
+
     body{
-        background-color: aqua;
+        background-color: rgb(120, 236, 236);
     }
-    .header{
-        background-color: aqua;
+     .header{
+        background-color: rgb(120, 236, 236);
     }
-    .nav-ul{
+      .nav-ul{
         float: right;
         display: flex;
     }
-    .nav-li{
+       .nav-li{
         margin-top: 30px;
         margin-right: 80px;
         font-size: 25px;
         margin-left: 10px;
     }
+    .nav-a{
+        color: $color3;
+        }
     .mujiks{
+        display: flex;
         width: 200px;
         height: 100px;
         margin-left: 60px;
@@ -68,3 +30,124 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         border-radius: 10px;
         border-radius: 5px;
     }
+  hr{
+    border: blue 2px solid;
+
+  }
+  .box{
+    display: flex;
+    width: 30%;
+    height: 350px;
+    border:$color1 2px solid;
+    border-radius: 3px;
+    float: left;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box:hover{
+    background-color: $color3;
+    transition: linear 2s ;
+}
+.text-box{
+    display: flex; 
+    display: block;
+    height:auto;
+    text-align: center;
+}
+.text{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+    color:$color1;
+}
+.text-box:hover{
+    background-color: $color3;
+    transition: linear 2s ;
+}
+img{
+    width: 150px;
+    height: 230px;
+}
+p{
+    display: inline-block;
+    font-size: 17px;
+    color: $color1;
+    font-weight: bold;
+
+}
+.container {
+  padding: 16px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: $color4;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: $color4;
+  outline: none;
+}
+hr {
+  border: 1px solid $color4;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: $color5;
+  color: $color4;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+a {
+  color: $color6;
+}
+.signin {
+  background-color: $color4;
+  text-align: center;
+}
+.footer{
+    float: right;
+    padding: 20px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: $color2;
+    color: $color1;
+  }
+  .fa-twitter {
+    background: $color2;
+    color: $color1;
+  }
+  .fa-youtube {
+    background: $color2;
+    color:$color1;
+  } 
+  .fa-instagram {
+    background: $color2;
+    color: $color1;
+  }
+  .fa-google {
+    background: $color2;
+    color:$color1;
+  }
