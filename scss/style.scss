@@ -1,7 +1,6 @@
 @import "./reset.scss";
 @import "./mixins.scss";
 
-
     body{
         background-color: rgb(120, 236, 236);
     }
@@ -31,7 +30,7 @@
         border-radius: 5px;
     }
   hr{
-    border: blue 2px solid;
+    border:2px solid;
 
   }
   .box{
@@ -43,7 +42,6 @@
     float: left;
     margin: 10px;
     align-items: center;
-    justify-content: space-between;
   }
   .box:hover{
     background-color: $color3;
